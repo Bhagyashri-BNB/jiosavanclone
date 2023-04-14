@@ -93,7 +93,7 @@ export default function ButtonAppBar() {
             >
                 <Toolbar />
                 <Divider />
-                <Box sx={{ overflow: "auto",  maxWidth: '100%' ,fontWeight: 500 }}>
+                <Box sx={{ overflow: "scroll",  maxWidth: '100%' ,fontWeight: 500 }}>
                     <Sidebar text="BROWSE" />
                     <Sidebar text="New Release" />
                     <Sidebar text="Top Charts" />
