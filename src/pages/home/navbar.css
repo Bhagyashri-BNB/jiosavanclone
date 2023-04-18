@@ -1,8 +1,10 @@
 .clickable-text {
     cursor: pointer;
     text-decoration: none;
+
   }
   
   .clickable-text:focus {
     text-decoration: underline;
+    color: black;
   }

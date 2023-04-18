@@ -4,21 +4,22 @@ import { Divider, useTheme } from "@mui/material";
 export const Footer = () => {
     const theme = useTheme();
   return (
-    <div>
-        <Box
-        // position="fixed"
-        // bottom="0"
-        width="100%"
-        height="30px"
-        sx={{backgroundColor: theme.status.navbar}}
-        
-        // display="flex"
-        justifyContent="left"
-        alignItems="left"
-        >
-           
-        <Typography sx={{mt: 2}}>©2023 Saavn Media Limited All rights reserved.</Typography>
-        </Box>
-    </div>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+  {/* your page content */}
+  <Box
+    position="fixed"
+    bottom="0"
+    width="100%"
+    height="30px"
+    sx={{
+      backgroundColor: theme.status.navbar,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}
+  >
+    <Typography sx={{ mt: 2 }}>©2023 Saavn Media Limited All rights reserved.</Typography>
+  </Box>
+</div>
   )
 }
