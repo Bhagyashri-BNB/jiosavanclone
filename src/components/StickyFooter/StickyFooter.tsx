@@ -29,19 +29,18 @@ export const StickyFooter = () => {
         display: 'flex',
         justifyContent: 'left',
         // alignItems: 'left',
-        paddingLeft:'40px', // Add left padding here to avoid overlapping of button on SideBar
+        paddingLeft:'10px', // Add left padding here to avoid overlapping of button on SideBar
         // alignItems:"center"
       }}
-    >
-        
-        <BottomNavigation
+    >        
+    <BottomNavigation
         showLabels
->
+    >
 <Divider />
-    <Typography sx={{mt:1}}>Songs</Typography>
+    <Typography sx={{mt:1 , marginLeft:"20px"}}>Songs</Typography>
   {/* <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} /> */}
       {Icons.map((Icon, index)=>{
-        return <Icon key={index} sx={{mt:1, alignItems: "right"}}/>
+        return <Icon key={index} sx={{mt:1, alignItems: "left"}}/>
         })}
 </BottomNavigation>
     </Box>
