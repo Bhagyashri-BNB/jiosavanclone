@@ -23,6 +23,7 @@ import { Footer } from '../../components/Footer/Footer';
 import "./navbar.css"
 import { useMediaQuery } from '@material-ui/core';
 import Grid from '@mui/material/Grid';
+import { StickyFooter } from '../../components/StickyFooter/StickyFooter';
 
 const drawerWidth = 220;
 const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
@@ -215,8 +216,12 @@ export default function ButtonAppBar() {
                     <Grid item>
                         <Music />
                     </Grid>
+                    <Divider sx={{mt:"30px"}} />
                     <Grid item>
                         <Footer />
+                    </Grid>
+                    <Grid item>
+                        <StickyFooter />
                     </Grid>
                 </Grid>
             </Box>
