@@ -7,43 +7,43 @@ import Divider from '@mui/material/Divider';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-
+import Grid from '@mui/material/Grid';
 export const StickyFooter = () => {
-    const theme=useTheme();
-    const Icons=[
+    const theme = useTheme();
+    const Icons = [
         SkipPreviousIcon,
         PlayArrowIcon,
         SkipNextIcon
-        
+
     ]
-  return (
-    <div>
-        
-        <Box
-      position="fixed"
-      bottom="0"
-      width="100%"
-      height="60px"
-      sx={{
-        backgroundColor: theme.status.navbar,
-        display: 'flex',
-        justifyContent: 'left',
-        // alignItems: 'left',
-        paddingLeft:'10px', // Add left padding here to avoid overlapping of button on SideBar
-        // alignItems:"center"
-      }}
-    >        
-    <BottomNavigation
-        showLabels
-    >
-<Divider />
-    <Typography sx={{mt:1 , marginLeft:"20px"}}>Songs</Typography>
-  {/* <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} /> */}
-      {Icons.map((Icon, index)=>{
-        return <Icon key={index} sx={{mt:1, alignItems: "left"}}/>
-        })}
-</BottomNavigation>
-    </Box>
-    </div>
-  )
+    return (
+        <div>
+
+            <Box
+               position="fixed"
+               bottom="0"
+               width="100%"
+               height="80px"
+               sx={{
+                 backgroundColor: theme.status.navbar,
+                //  display: 'flex',
+                //  justifyContent: 'left',
+                 flex: 1,
+                //  paddingLeft: '1px', // Add left padding here to avoid overlapping of button on SideBar
+               }}   
+            >
+                <Divider />
+                <Grid >
+                    <Grid item xs={2}>
+                    <Typography sx={{ mt: 0 }}>Songs</Typography>
+                    </Grid>
+                    <Grid item xs={10} justifyContent="center" alignItems="center">
+                    {Icons.map((Icon, index) => {
+                    return <Icon key={index} sx={{ mt: 0, marginLeft:'2px'}} />
+                    })}
+                    </Grid>
+                </Grid>
+            </Box>
+        </div>
+    )
 }

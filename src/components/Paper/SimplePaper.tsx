@@ -29,6 +29,7 @@ export default function SimplePaper() {
     const fetchData = async () => {
       const response = await axios.get('https://fakestoreapi.com/products/')
       setData(response.data);
+      console.log(response.data);
     }
     fetchData();
   }, []);

@@ -111,8 +111,8 @@ export const Footer = () => {
       'JioSaavn Artist Insights',
       'JioSaavn YourCast'
     ]
-    const colors = ['#3B5998','#1DA1F2', '#FF0000', '#FF0000', '#0077B5'];
-      const theme = useTheme();
+    const colors = ['#3B5998','#1DA1F2', '#FF0000', '#E1308B', '#0077B5'];
+      // const theme = useTheme();
     return (
       <div style={{ display: 'flex', flexDirection: 'column',  }}>
         <Box
@@ -191,7 +191,7 @@ export const Footer = () => {
       width="100%"
       height="30px"
       sx={{
-        backgroundColor: theme.status.navbar,
+        // backgroundColor: theme.status.navbar,
         display: 'flex',
         justifyContent: 'left',
         alignItems: 'left',

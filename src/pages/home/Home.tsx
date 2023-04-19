@@ -216,7 +216,7 @@ export default function ButtonAppBar() {
                     <Grid item>
                         <Music />
                     </Grid>
-                    <Divider sx={{mt:"30px"}} />
+                    <Divider  />
                     <Grid item>
                         <Footer />
                     </Grid>
